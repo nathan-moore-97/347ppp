@@ -1,0 +1,70 @@
+/* 
+https://w3.cs.jmu.edu/mayfiecs/cs149/ 
+
+Thanks! Nathan Moore
+*/
+
+
+@media screen {
+    body {
+        background-color: #450084;
+    }
+    .main {
+        background-color: #CBB677;
+        border: 1px ridge darkgray;
+        margin: 15px auto;
+        padding: 15px;
+        max-width: 960px;
+    }
+}
+
+A:link    {text-decoration: none}
+A:visited {text-decoration: none}
+A:active  {text-decoration: none}
+A:hover   {text-decoration: underline}
+
+h1 {
+    font-size: 15pt;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-top: 2ex;
+}
+
+h2 {
+    font-size: 13pt;
+    page-break-after: avoid;
+}
+
+h3 {
+    color: dodgerblue;
+    padding-top: 1ex;
+    page-break-before: always;
+}
+
+pre {
+    background-color: whitesmoke;
+    margin: 0px;
+    padding: 1em;
+    page-break-inside: avoid;
+    white-space: pre-wrap;
+}
+
+code {
+    background-color: whitesmoke;
+    color: crimson;
+    padding-left: 2pt;
+    padding-right: 2pt;
+}
+
+em {
+    color: firebrick;
+    font-weight: bold;
+}
+
+.input {
+    color: #00C87D;
+}
+
+.output {
+    color: #000000;
+}
