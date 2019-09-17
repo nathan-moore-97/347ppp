@@ -1,0 +1,165 @@
+
+/* This wont work the way I want without JS, so to be continued... */
+/* .sticky {
+    position: fixed;
+} */
+
+@font-face {
+    font-family: "Baskerville";
+    src: url("../baskervville/Baskervville-Regular.otf") format("opentype")
+}
+
+#pageTitle {
+    text-transform: uppercase;
+    font-family: 'Baskerville', 'Times New Roman', Times, serif;
+    font-weight: 100;
+    text-align: center;
+    font-size: 4em;
+    border-bottom: 1px solid #333 ;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+#extraPageTitle {
+    background-image: url("../images/new_york.jpg");
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    font-size: 4em;
+    box-shadow: 5px 10px 8px #888888;
+    background-repeat: no-repeat;
+}
+
+#navBar {
+    width: 100%;
+    align-content: center;
+    visibility: visible;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+    background-image: linear-gradient(to right,#333 , #888888);
+    font-size: 2em;
+    z-index: 9000;
+}
+
+#navElement {
+    color: white;
+    display: inline;
+    line-height: 1.5;
+    text-align: center;
+    align-content: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#navElement:hover {
+    background-color: #046b99;
+}
+
+img {
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+#nate {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    width: 75%;
+}
+
+.content {
+    line-height: 1.5;
+	margin-left: 12.5%;
+	/* margin-right: 17%; */
+	width: 70%;
+    font-family: Verdana, Arial, sans-serif;
+    text-overflow: ellipsis;
+}
+
+.content~p {
+    color: #333;
+}
+
+#heading {
+    border-bottom: 1px solid #333 ;
+}
+
+h2+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+}
+
+#social {
+    text-decoration: none;
+    /* cant get this to work */
+    border-image-slice: 316 304 316 304; 
+    border-image-width: 20px 20px 20px 20px; 
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch;
+    border-image-source: url("../images/graph.png");
+}
+
+#socialLinks {
+    position: fixed;
+}
+
+#socialLinks ul{
+    list-style-type: none;
+    list-style-position: outside; /* REMOVE */
+    float: left;
+    clear: left;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+footer>p{
+    color: grey;
+    font-style: italic;
+    font-size: 0.5em;
+    text-align: center;
+}
+
+/* REMOVE */
+#useless {
+    display: none;
+}
+
+dl {
+    padding: 0.5em;
+}
+dt {
+    float: left;
+    clear: left;
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+}
+
+dt::after {
+  content: ":";
+}
+
+dd {
+  margin: 0 0 0 110px;
+  padding: 0 0 0.5em 2.5em;
+}
+
+#nate_jason {
+    transform: rotate(0.75turn) scale(0.5, 0.5);
+    filter: contrast(125%);
+    position: absolute;
+    top: 120%;
+    left: 50%;
+
+    /* clip: rect(<top>, <right>, <bottom>, <left>); */
+    /* I dont know if the website reference I used to figure out what to do for clip is wrong 
+    or just outdated, but this was annoying to figure out what to actually do. */
+    
+    clip: rect(auto, 700px, auto, 200px); /* Finally! */
+}
