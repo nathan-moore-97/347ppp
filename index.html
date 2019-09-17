@@ -4,57 +4,79 @@
         <meta charset="utf-8">
         <meta name="author" content="Nathan Moore">
         <title>Nathan Moore</title>
+        <link rel="stylesheet" type="text/css" href="style/desktop.css" />
     </head>
     <body>
         <header>
-            <h1>Nathan Moore</h1>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="personal.html">Hobbies/Interests</a>
-                <a href="professional.html">Professional Portfolio</a>
-                <a href="contact.html">Contact Me</a>
+            <h1 id="pageTitle">Nathan Moore</h1>
+            <nav class="sticky" id="navBar">
+                <a id="navElement" href="index.html">About</a>
+                <a id="navElement" href="personal.html">Hobbies/Interests</a>
+                <a id="navElement" href="professional.html">Professional Portfolio</a>
+                <a id="navElement" href="contact.html">Contact Me</a>
+                <a id="navElement" href="not_found.html">Extras</a>
             </nav>
         </header>
-        <div>
-            <picture>
-                    <source srcset="images/nathan.jpg" media="(max-width: 768px)">
-                    <img src="images/med_nathan.jpg" 
-                        alt=":( You don't get to gaze upon my beautiful face today. How Sad.">
-            </picture>
-            <h2>About Me</h2>
-            <p>
-            Hello! I'm Nathan, 22 years old and a student at James Madison Univeristy in Virginia. 
-            <br><br>
-            I was never the best at academics in high school, and I found myself at the end of my senior  <br>
-            year without a college, a plan, or much drive to make anything of myself. I began attending  <br>
-            community college in Northern Virginia as a way to gain a path forward. But I found much more  <br>
-            than that. I found a love of learning, a natural curiosity, and a desire to begin my academic  <br>
-            journey in earnest as soon as I could.
-            <br><br>
-            I began at James Madison Univeristy a year and a half later, as a student of Computer Science.  <br>
-            Since then, I have found an insatiable appetite for the world of computing, and recently,  <br>
-            mathematics. I've learned things I never could have imagined on my first day in Harrisonburg,  <br>
-            found new hobbies, and met many interesting and brilliant people. This is my final semester at <br>
-            JMU, and while I will miss my school dearly, I cannot wait to see what the world has in store for  <br>
-            me next. 
-            <br><br>
-            Go dukes!
-            </p>
+        <div id="socialLinks">
+            <ul>
+                <li>
+                    <a id="social" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/twitter.ico" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/facebook.ico" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://github.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/github.ico" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/linkedin.ico" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
         </div>
-        <footer>
-            <h3>Social Media</h3>  
-            <a href="https://twitter.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/twitter.ico" alt="Twitter">
-            </a>
-            <a href="https://facebook.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/facebook.ico" alt="Facebook">
-            </a>
-            <a href="https://github.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/github.ico" alt="GitHub">
-            </a>
-            <a href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/linkedin.ico" alt="LinkedIn">
-            </a>
+        <div>
+            <picture id="nate">
+                <source srcset="images/nathan.jpg" media="(max-width: 768px)">
+                <img src="images/med_nathan.jpg" 
+                    alt=":( You don't get to gaze upon my beautiful face today. How Sad.">
+            </picture>
+            <h2 class="content" id="heading">About Me</h2>
+            <p class="content">
+                Hello! I'm Nathan, 22 years old and a student at James Madison Univeristy in Virginia. 
+            </p>
+            <p class="content">
+                I was never the best at academics in high school, and I found myself at the end of my senior
+                year without a college, a plan, or much drive to make anything of myself. I began attending
+                community college in Northern Virginia as a way to gain a path forward. But I found much more
+                than that. I found a love of learning, a natural curiosity, and a desire to begin my academic
+                journey in earnest as soon as I could.
+            </p>
+            <p class="content">
+                I began at James Madison Univeristy a year and a half later, as a student of Computer Science.  
+                Since then, I have found an insatiable appetite for the world of computing, and recently,  
+                mathematics. I've learned things I never could have imagined on my first day in Harrisonburg,  
+                found new hobbies, and met many interesting and brilliant people. This is my final semester at 
+                JMU, and while I will miss my school dearly, I cannot wait to see what the world has in store for  
+                me next. 
+            </p>
+            <p class="content">
+                Please click the links in the nav bar to take a quick look at who I am as a person, and who I am 
+                as a professional.
+            </p>
+            <p class="content">
+                Go dukes!
+            </p>
+            
+        </div>
+        <footer class="content">
+            <p id="signature">Page created by Nathan Moore for JMU CS 347: Web Development</p>
         </footer>
     </body>
 </html>

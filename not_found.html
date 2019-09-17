@@ -4,35 +4,55 @@
         <meta charset="utf-8">
         <meta name="author" content="Nathan Moore">
         <title>Nathan Moore</title>
+        <link rel="stylesheet" type="text/css" href="style/desktop.css" />
     </head>
     <body>
-        <header>
-            <h1>Nathan Moore</h1>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="personal.html">Hobbies/Interests</a>
-                <a href="professional.html">Professional Portfolio</a>
-                <a href="contact.html">Contact Me</a>
-            </nav>
+        <header id="extraPageTitle">
+            <h1 id="pageTitle">Nathan Moore</h1>
         </header>
-        <div>
+        <nav class="sticky" id="navBar">
+            <a id="navElement" href="index.html">About</a>
+            <a id="navElement" href="personal.html">Hobbies/Interests</a>
+            <a id="navElement" href="professional.html">Professional Portfolio</a>
+            <a id="navElement" href="contact.html">Contact Me</a>
+            <a id="navElement" href="not_found.html">Extras</a>
+        </nav>
+        <div id="socialLinks">
+            <ul>
+                <li>
+                    <a id="social" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/twitter.ico" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/facebook.ico" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://github.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/github.ico" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/linkedin.ico" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
             <h2>Page not available</h2>
             <p>Oh, beans. It looks like this page isn't ready yet. Click here to return <a href="index.html">home</a>.</p>
+            <p>For now, this page will be used to style things I dont want to add to the full site.</p>
+            <!-- REMOVE -->
+            <p id="useless">I am the invisible p.</p>
+            <div>
+                <img id="nate_jason" src="images/rsz_nate_jason.jpg" alt="">
+            </div>
         </div>
         <footer>
-            <h3>Social Media</h3>  
-            <a href="https://twitter.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/twitter.ico" alt="Twitter">
-            </a>
-            <a href="https://facebook.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/facebook.ico" alt="Facebook">
-            </a>
-            <a href="https://github.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/github.ico" alt="GitHub">
-            </a>
-            <a href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/linkedin.ico" alt="LinkedIn">
-            </a>
+            <p id="signature">Page created by Nathan Moore for JMU CS 347: Web Development</p>
         </footer>
     </body>
 </html>

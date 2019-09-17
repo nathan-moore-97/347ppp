@@ -4,19 +4,45 @@
         <meta charset="utf-8">
         <meta name="author" content="Nathan Moore">
         <title>Nathan Moore</title>
+        <link rel="stylesheet" type="text/css" href="style/desktop.css" />
     </head>
     <body>
         <header>
-            <h1>Nathan Moore</h1>
-            <nav>
-                <a href="index.html">About</a>
+            <h1 id="pageTitle">Nathan Moore</h1>
+            <nav class="sticky" id="navBar">
+                <a id="navElement" href="index.html">About</a>
                 <a href="personal.html">Hobbies/Interests</a>
                 <a href="professional.html">Professional Portfolio</a>
                 <a href="contact.html">Contact Me</a>
+                <a href="not_found.html">Extras</a>
             </nav>
         </header>
-        <div>
-            <h2>How to get in touch</h2>
+        <div id="socialLinks">
+            <ul>
+                <li>
+                    <a id="social" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/twitter.ico" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/facebook.ico" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://github.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/github.ico" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/linkedin.ico" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2 id="heading">How to get in touch</h2>
             <h4>Fill out the form below to notify my server and I'll get back to you in 3-4 business days,</h4>
             <form>
                 <label for="fname">First Name</label><br>
@@ -24,7 +50,7 @@
                 <label for="lname">Last Name</label><br>
                 <input id="lname" type="text"><br>
                 <label for="email">Email</label><br>
-                <input id="email" type="text" required><br>
+                <input id="email" type="email" required><br>
                 <label for="reason">Reason for contact:</label><br>
                 <input id="reason" type="text" required><br>
                 <br>
@@ -36,19 +62,7 @@
             
         </div>
         <footer>
-            <h3>Social Media</h3>  
-            <a href="https://twitter.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/twitter.ico" rel="noopener noreferrer" alt="Twitter">
-            </a>
-            <a href="https://facebook.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/facebook.ico" alt="Facebook">
-            </a>
-            <a href="https://github.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/github.ico" alt="GitHub">
-            </a>
-            <a href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/linkedin.ico" alt="LinkedIn">
-            </a>
+            <p id="signature">Page created by Nathan Moore for JMU CS 347: Web Development</p>
         </footer>
     </body>
 </html>

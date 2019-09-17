@@ -4,44 +4,70 @@
         <meta charset="utf-8">
         <meta name="author" content="Nathan Moore">
         <title>Nathan Moore</title>
+        <link rel="stylesheet" type="text/css" href="style/desktop.css" />
     </head>
     <body>
         <header>
-            <h1>Nathan Moore</h1>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="personal.html">Hobbies/Interests</a>
-                <a href="professional.html">Professional Portfolio</a>
-                <a href="contact.html">Contact Me</a>
+            <h1 id=pageTitle>Nathan Moore</h1>
+            <nav class="sticky" id="navBar">
+                <a id="navElement" href="index.html">About</a>
+                <a id="navElement" href="personal.html">Hobbies/Interests</a>
+                <a id="navElement" href="professional.html">Professional Portfolio</a>
+                <a id="navElement" href="contact.html">Contact Me</a>
+                <a id="navElement" href="not_found.html">Extras</a>
             </nav>
         </header>
-        <div>
-            <h2>Paid Experience</h2>
+        <div id="socialLinks">
+            <ul>
+                <li>
+                    <a id="social" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/twitter.ico" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/facebook.ico" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://github.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/github.ico" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+                            <img src="images/linkedin.ico" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2 id="heading">Paid Experience</h2>
             <dl>
-                <dt>SIGCHI Conference Scheduling</dt>
+                <dt>SIGCHI<br>Conference<br>Scheduling</dt>
                 <dd>
-                    Ongoing research project overseen by two of my professors at JMU. Using the LDA algorithm<br>
-                    for natural language processing to analyse the Titles, Abstracts, and Author Keywords of<br>
-                    papers submitted to the ACM Conference on Human Factors in Computing Systems (CHI), we hope<br>
-                    to automate the tedious process of scheduling the presentations by subject during the<br>
+                    Ongoing research project overseen by two of my professors at JMU. Using the LDA algorithm
+                    for natural language processing to analyse the Titles, Abstracts, and Author Keywords of
+                    papers submitted to the ACM Conference on Human Factors in Computing Systems (CHI), we hope
+                    to automate the tedious process of scheduling the presentations by subject during the
                     conference. 
                 </dd>
-                <dt>JMUxLabs AutoCart</dt>
+                <dt>JMUxLabs<br>AutoCart</dt>
                 <dd>
-                    During the Summer of 2019, I spent two months refactoring the codebase produced by the<br>
-                    students of an Autonomous Vechicles course semesters past, whom had succeeded in developing<br>
-                    an Autonomous Golf Cart. I worked on updating a simulator used for navigation system development<br>
+                    During the Summer of 2019, I spent two months refactoring the codebase produced by the
+                    students of an Autonomous Vechicles course semesters past, whom had succeeded in developing
+                    an Autonomous Golf Cart. I worked on updating a simulator used for navigation system development
                     and preparing the physical systems of the cart for the upcoming class. 
                 </dd>
             </dl>
-            <h2>Academic Experience</h2>
+            <h2 id="heading">Academic Experience</h2>
             <ul>
                 <li>Poker AI Series</li>
                 <li>Autonomous Zeta-Radiation Response System</li>
                 <li>Data Recovery from Fragmented Drives</li>
                 <li>IMDb Schema Refactoring and Client</li>
             </ul>
-            <h2>Technologies and Experience</h2>
+            <h2 id="heading">Technologies and Experience</h2>
             <table>
                 <tr>
                     <th>Technology</th>
@@ -78,19 +104,7 @@
             </table>
         </div>
         <footer>
-            <h3>Social Media</h3>  
-            <a href="https://twitter.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/twitter.ico" alt="Twitter">
-            </a>
-            <a href="https://facebook.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/facebook.ico" alt="Facebook">
-            </a>
-            <a href="https://github.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/github.ico" alt="GitHub">
-            </a>
-            <a href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/linkedin.ico" alt="LinkedIn">
-            </a>
+            <p id="signature">Page created by Nathan Moore for JMU CS 347: Web Development</p>
         </footer>
     </body>
 </html>

@@ -4,19 +4,45 @@
         <meta charset="utf-8">
         <meta name="author" content="Nathan Moore">
         <title>Nathan Moore</title>
+        <link rel="stylesheet" type="text/css" href="style/desktop.css" />
     </head>
     <body>
         <header>
-            <h1>Nathan Moore</h1>
-            <nav>
-                <a href="index.html">About</a>
-                <a href="personal.html">Hobbies/Interests</a>
-                <a href="professional.html">Professional Portfolio</a>
-                <a href="contact.html">Contact Me</a>
+            <h1 id="pageTitle">Nathan Moore</h1>
+            <nav class="sticky" id="navBar">
+                <a id="navElement" href="index.html">About</a>
+                <a id="navElement" href="personal.html">Hobbies/Interests</a>
+                <a id="navElement" href="professional.html">Professional Portfolio</a>
+                <a id="navElement" href="contact.html">Contact Me</a>
+                <a id="navElement" href="not_found.html">Extras</a>
             </nav>
         </header>
-        <div>
-            <h2>A little bit about the things I love</h2>
+        <div id="socialLinks">
+            <ul>
+                <li>
+                    <a id="social" href="https://twitter.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/twitter.ico" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://facebook.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/facebook.ico" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://github.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/github.ico" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a id="social" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+                        <img src="images/linkedin.ico" alt="LinkedIn">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h2 id="heading">A little bit about the things I love</h2>
             <dl>
                 <dt>Programming</dt>
                 <dd>
@@ -33,7 +59,7 @@
                 </dd>
                 <dt>Electronics</dt>
                 <dd>
-                    This summer, I was privileged to join a team at JMUxLabs preparing for the  <br>
+                    This summer, I was privileged to join a team at JMU X-Labs preparing for the  <br>
                     upcoming inter-disciplinary Autonomous Vechicles course. During my time in  <br>
                     that position, I got the oppurtunity to learn a bit about hardware, sensors  <br>
                     and electronics. I'm excited to see where this new hobby will take me in the 
@@ -61,20 +87,8 @@
                 </dd>
             </dl>
         </div>
-        <footer>
-            <h3>Social Media</h3>  
-            <a href="https://twitter.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/twitter.ico" alt="Twitter">
-            </a>
-            <a href="https://facebook.com" rel="noopener noreferrer" target="_blank">
-                    <img src="images/facebook.ico" alt="Facebook">
-            </a>
-            <a href="https://github.com" rel="noopener noreferrer" target="_blank">
-                    <img src="images/github.ico" alt="GitHub">
-            </a>
-            <a href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
-                <img src="images/linkedin.ico" alt="LinkedIn">
-            </a>
+        <footer class="content">
+            <p id="signature">Page created by Nathan Moore for JMU CS 347: Web Development</p>
         </footer>
     </body>
 </html>
